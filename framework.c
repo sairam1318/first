@@ -5,7 +5,7 @@
 #define FIELD_FILE_NAME "field1.cfg"
 #define MENu_FILE_NAME "menu.cfg"
 #define FIELD_NAME_LENGTH 50
-#define FIELD_VALUE_LENGTH 20
+#define FIELD_VALUE_LENGTH 50
 #define MENU_LINE_LENGTH 50
 
 static int numberOfFields = 0;
@@ -53,13 +53,13 @@ void showMenu(){
 			scanf("%d", &choice);
 			switch(choice){
 			case 1: create();
-					break;
+				break;
 			case 2: read();
-					break;
+				break;
 			case 3: exitMenu();
-					break;
+				break;
 			default: printf("Entered choice is wrong. ");
-					break;
+				break;
 			}
 	
 		}
